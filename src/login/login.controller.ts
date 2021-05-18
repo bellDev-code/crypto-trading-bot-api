@@ -1,9 +1,8 @@
-import { Body, Controller, Get, Query, Req } from '@nestjs/common';
-import { Request } from 'express';
+import { Controller, Get, Query } from '@nestjs/common';
 import { KakaoLoginDto } from './dtos/login.dto';
 import { LoginService } from './login.service';
 
-@Controller('login')
+@Controller('login') // http://localhost:3090/login
 export class LoginController {
   constructor(private readonly loginService: LoginService) {}
   @Get('kakao')
