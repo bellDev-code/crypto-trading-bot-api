@@ -1,10 +1,6 @@
 import { HttpService, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import {
-  KakaoLoginDto,
-  KakaoLoginResponseDto,
-  KakaoMeResponse,
-} from './dtos/login.dto';
+import { KakaoLoginResponseDto, KakaoMeResponse } from './dtos/login.dto';
 
 @Injectable()
 export class LoginService {

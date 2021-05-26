@@ -1,6 +1,6 @@
 import { Controller, Get, Query, Res, Session } from '@nestjs/common';
 import { Response } from 'express';
-import { KakaoLoginDto, KakaoMeResponse } from './dtos/login.dto';
+import { KakaoLoginDto } from './dtos/login.dto';
 import { LoginService } from './login.service';
 
 @Controller('login') // http://localhost:3090/login
