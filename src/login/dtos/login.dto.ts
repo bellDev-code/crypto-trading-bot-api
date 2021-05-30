@@ -2,7 +2,6 @@ import {
   IsBoolean,
   IsInt,
   IsNotEmpty,
-  isObject,
   IsObject,
   IsOptional,
   IsString,
@@ -37,15 +36,19 @@ export class KakaoAccount {
   @IsBoolean()
   @IsOptional()
   has_email?: boolean;
+
   @IsBoolean()
   @IsOptional()
   email_needs_agreement?: boolean;
+
   @IsBoolean()
   @IsOptional()
   is_email_valid?: boolean;
+
   @IsBoolean()
   @IsOptional()
   is_email_verified?: boolean;
+
   @IsString()
   @IsOptional()
   email?: string;
