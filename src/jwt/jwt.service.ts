@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import * as jwt from 'jsonwebtoken';
-import { SocialType } from 'src/users/dtos/user.dto';
 import { JwtVerifyResult } from './jwt.types';
 
 @Injectable()
